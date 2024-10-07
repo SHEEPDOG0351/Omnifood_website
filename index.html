@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omnifood</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;  
+            font-family: 'Lato', 'Arial', 'sans-serif';
+            font-weight: 300;
+            color: white;
+        }
+
+        #header-container {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('Omnifood Contents/Omnifood Contents/hero.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+            width: 100%;
+            padding: 20px 50px;  
+            overflow: hidden;  
+
+        }
+
+        #first-section-container {
+            margin-left: 139px;
+        }
+
+        nav {
+            display: flex;               
+            justify-content: space-between; 
+            align-items: center;   
+            position: relative;
+            z-index: 1; 
+        }
+
+        #nav-image {
+            height: 100px;
+            width: auto; 
+            object-fit: contain; 
+        }
+
+        #nav-wrapper {
+            display: flex;
+            margin-right: 100px;
+            font-size: 18px;
+            font-weight: 300;
+        }
+
+        .nav-items {
+            padding-right: 20px;
+            margin-left: 30px;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        #middle-container {
+            padding-top: 200px;
+            font-weight: 100;
+            letter-spacing: 1px;
+        }
+
+        #middle-container p {
+            padding: 2.5px;
+            font-size: 50px;
+        }
+
+        #middle-container a {
+            display: inline-block; 
+            padding-top: 15px;
+            text-decoration: none;
+            border: 1px solid #e67e22;
+            border-radius: 200px;
+            text-align: center;
+            padding: 10px 30px;
+            margin-top: 10px;
+        }
+
+        #first-button {
+            border-color: #e67e22;
+            background-color: #e67e22;
+        }
+
+        #second-button {
+            color: #e67e22;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div id="header-container">
+        <div id="first-section-container">
+            <nav>
+                <img id="nav-image" src="Omnifood Contents/Omnifood Contents/logo-white.png" alt="logo">
+            <div id="nav-wrapper">
+                <p class="nav-items">FOOD DELIVERY</p>
+                <p class="nav-items">HOW IT WORKS</p>
+                <p class="nav-items">OUR CITIES</p>
+                <p class="nav-items">SIGN UP</p>
+            </div>
+            </nav>
+
+            <div id="middle-container">
+                <p>GOODBYE JUNKFOOD.</p>
+                <p>HELLO SUPER HEALTHY MEALS.</p>
+                <a id="first-button" href="">I'm hungry</a>
+                <a id="second-button" href="">Show me more</a>
+            </div>
+            
+        </div>
+    </div> 
+</body>
+</html>
