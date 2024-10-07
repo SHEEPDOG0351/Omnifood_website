@@ -17,6 +17,10 @@
             color: white;
         }
 
+        html {
+            line-height: 1.15;
+        }
+
         #header-container {
             background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('Omnifood Contents/Omnifood Contents/hero.jpg');
             background-size: cover;
@@ -93,6 +97,48 @@
 
         }
 
+        #second-section-container {
+            background-color: white;
+            color: black;
+            font-size: 18px;
+        }
+        
+        #second-section-container h2 {
+            color: black;
+            text-align: center;
+            font-size: 32.4px;
+            padding-top: 75px;
+        }
+
+        #second-section-header::after {
+            display: block;
+            height: 2px;
+            background-color: #e67622;
+            content: " ";
+            width: 100px;
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+
+        #second-p-container {
+            margin-left: 380px;
+        }
+
+        .second-section-p {
+            font-size: 18px;
+            color: black;
+        }
+
+        #second-section-p {
+            color: black;
+            padding-top: 20px;
+            font-size: 18px;
+        }
+
+        #second-section-p-2 {
+            padding-top: 15px;
+        }
+
     </style>
 </head>
 <body>
@@ -117,5 +163,13 @@
             
         </div>
     </div> 
+
+    <div id="second-section-container">
+        <h2 id="second-section-header">GET FOOD FAST - NOT FAST FOOD</h2>
+        <div id="second-p-container">
+            <p class="second-section-p" id="second-section-p">Hello, we’re Omnifood, your new premium food delivery service. We know you’re always busy.</p>
+            <p class="second-section-p" id="second-section-p-2">No time for cooking. So let us take care of that, we’re really good at it, we promise!</p>
+        </div>
+    </div>
 </body>
 </html>
