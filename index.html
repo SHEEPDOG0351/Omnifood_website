@@ -28,6 +28,10 @@
             line-height: 1.15;
         }
 
+        ul {
+            list-style: none;
+        }
+
         #header-container {
             background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('Omnifood Contents/Omnifood Contents/hero.jpg');
             background-size: cover;
@@ -212,7 +216,7 @@
             grid-template-columns: 1fr 1fr; 
             grid-template-rows: repeat(3, auto);
             grid-auto-rows: minmax(100px, auto); 
-            gap: 10px; 
+            margin-right: 100px;
         }
 
         #phone-container {
@@ -252,6 +256,97 @@
 
         .step-text {
             font-size: 22px;
+        }
+
+        #sixth-section {
+            color: black;
+        }
+
+        #sixth-header {
+            font-size: 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #sixth-header::after {
+            display: block;
+            height: 2px;
+            background-color: #e67622;
+            content: " ";
+            width: 100px;
+            margin: 0 auto;
+            margin-top: 30px;
+            margin-bottom: 45px;
+        }
+
+        #sixth-body-container {
+            width: 100%; 
+        }
+
+        #sixth-images-container {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+        .sixth-images {
+            width: 21%;
+            height: auto;
+        }
+
+        #city-pics-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .cities {
+            width: 18%;
+            margin: 20px;
+            color: #555;
+        }
+
+        .cities img {
+            width: 100%;
+            height: auto;
+            padding-bottom: 15px;
+        }
+
+        .cities h3 {
+            font-size: 22px;
+            margin: 10px 0;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+
+        .cities p {
+            margin: 5px 0;
+            font-size: 20px;
+            font-weight: 300;
+        }
+
+        .cities a {
+            color: #e67e22;
+            text-decoration: none;
+            padding-bottom: 1px;
+            border-bottom: 1px solid #e67e22;
+        }
+
+        .sixth-ionicons {
+            color: #e67622;
+            font-size: 20px;
+            padding-left: 3px;
+            padding-right: 10px;
+        }
+
+        #seventh-section {
+            background-position: center;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('Omnifood Contents/Omnifood Contents/back-customers.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+
         }
 
     </style>
@@ -368,7 +463,41 @@
             <h1>WE'RE CURRENTLY IN THESE CITIES</h1>
         </div>
         
-        <div id="sixth-body-container">
+        <div id="city-pics-container">
+            <div class="cities">
+                <img class="sixth-images" src="Omnifood Contents/Omnifood Contents/lisbon-3.jpg">
+                <h3>LISBON</h3>
+                <p><ion-icon class="sixth-ionicons" name="person"></ion-icon> 1600+ happy eaters</p>
+                <p><ion-icon class="sixth-ionicons" name="star"></ion-icon> 60+ top chefs</p>
+                <p class="email"><ion-icon class="sixth-ionicons" name="logo-twitter"></ion-icon> <a href="">@omnifood_lx</a></p>
+            </div>
+
+            <div class="cities">
+                <img src="Omnifood Contents/Omnifood Contents/san-francisco.jpg" class="sixth-images">
+                <h3>SAN FRANCISCO</h3>
+                <p><ion-icon class="sixth-ionicons" name="person"></ion-icon> 3700+ happy eaters</p>
+                <p><ion-icon class="sixth-ionicons" name="star"></ion-icon> 60+ top chefs</p>
+                <p class="email"><ion-icon class="sixth-ionicons" name="logo-twitter"></ion-icon> <a href="">@omnifood_sf</a></p>
+            </div>
+
+            <div class="cities">
+                <img src="Omnifood Contents/Omnifood Contents/berlin.jpg" class="sixth-images">
+                <h3>BERLIN</h3>
+                <p><ion-icon class="sixth-ionicons" name="person"></ion-icon> 2300+ happy eaters</p>
+                <p><ion-icon class="sixth-ionicons" name="star"></ion-icon> 110+ top chefs</p>
+                <p class="email"><ion-icon class="sixth-ionicons" name="logo-twitter"></ion-icon> <a href="">@omnifood_berlin</a></p>
+            </div>
+
+            <div class="cities">
+                <img src="Omnifood Contents/Omnifood Contents/london.jpg" class="sixth-images">
+                <h3>LONDON</h3>
+                <p><ion-icon class="sixth-ionicons" name="person"></ion-icon> 1200+ happy eaters</p>
+                <p><ion-icon class="sixth-ionicons" name="star"></ion-icon> 50+ top chefs</p>
+                <p class="email"><ion-icon class="sixth-ionicons" name="logo-twitter"></ion-icon> <a href="">@omnifood_london</a></p>
+            </div>
+        </div>
+
+        <div id="seventh-section">
             
         </div>
     </div>
