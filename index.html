@@ -346,8 +346,119 @@
             background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('Omnifood Contents/Omnifood Contents/back-customers.jpg');
             background-size: cover;
             background-attachment: fixed;
-
+            color: white;
         }
+
+        #seventh-section h2 {
+            text-align: center;
+            color: white;
+            font-size: 38px;
+            padding-top: 70px;
+        }
+
+        #seventh-section h2:after {
+            display: block;
+            height: 2px;
+            background-color: #e67622;
+            content: " ";
+            width: 100px;
+            margin: 0 auto;
+            margin-top: 30px;
+            margin-bottom: 45px;
+        }
+
+        #seventh-body {
+            width: 100%;
+            display: flex;
+            margin: 0 auto;
+            padding-left: 100px;
+            padding-right: 100px;
+            padding-bottom: 70px;
+        }
+
+        .seventh-body-containers {
+            position: relative;
+            margin-top: 30px;
+            width: 26%;
+            margin: 0 auto;
+            line-height: 1.4;
+        }
+
+        .quote-mark {
+            font-size: 100px;
+            color: white;
+            line-height: 0;
+            text-align: left;
+        }
+
+        .customer-info {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .customer-info p {
+            padding-left: 12px;
+        }
+
+        .seventh-body-containers p {
+            font-style: italic;
+            font-size: 20px;
+            padding-bottom: 15px;
+        }
+
+        .seventh-body-containers img {
+            width: 45px;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        #eigth-section {
+            background-color: #f4f4f4;
+        }
+
+        #eigth-section h2 {
+            text-align: center;
+            color: #555;
+            font-size: 38px;
+            padding-top: 80px;
+        }
+
+        #eigth-section h2:after {
+            display: block;
+            height: 2px;
+            background-color: #e67622;
+            content: " ";
+            width: 100px;
+            margin: 0 auto;
+            margin-top: 30px;
+            margin-bottom: 18px;
+        }
+
+        #eigth-section-body {
+            width: 100%;
+            justify-content: center;
+            background-color: #f4f4f4;
+            display: flex;
+            
+        }
+
+        .class-boxes {
+            margin: 20px;
+            width: 20%;
+            color: #555;
+            font-weight: 300;
+            background-color: white;
+        }
+
+        .class_level {
+            text-align: left;
+            padding-left: 10px;
+            padding-top: 10px;
+            padding-bottom: 15px;
+            font-size: 25px;
+        }
+
 
     </style>
 </head>
@@ -498,7 +609,62 @@
         </div>
 
         <div id="seventh-section">
+            <div>
+                <h2>OUR CUSTOMERS CAN'T LIVE WITHOUT US</h2>
+            </div>
             
+            <div id="seventh-body">
+
+                <div class="seventh-body-containers">
+                    <div class="quote-mark">“</div> 
+                    <p class="seventh-text">Omnifood is just awesome! I just launched a startup which leaves me with no time for cooking, so Omnifood is a life-saver. Now that I got used to it, I couldn't live without my daily meals!</p>
+                    <div class="customer-info">
+                        <img src="Omnifood Contents/Omnifood Contents/customer-1.jpg">
+                        <p>Alberto Duncan</p>
+                    </div>
+                </div>
+
+                <div class="seventh-body-containers">
+                    <div class="quote-mark">“</div> 
+                    <p class="seventh-text">Inexpensive, healthy and great-tasting meals, delivered right to my home. We have lots of food delivery here in Lisbon, but no one comes even close to Omifood. Me and my family are so in love!</p>
+                    <div class="customer-info">
+                        <img src="Omnifood Contents/Omnifood Contents/customer-2.jpg">
+                        <p>Joana Silva</p>
+                    </div>
+                </div>
+
+                <div class="seventh-body-containers">
+                    <div class="quote-mark">“</div> 
+                    <p class="seventh-text">I was looking for a quick and easy food delivery service in San Franciso. I tried a lot of them and ended up with Omnifood. Best food delivery service in the Bay Area. Keep up the great work!</p>
+                    <div class="customer-info">
+                        <img src="Omnifood Contents/Omnifood Contents/customer-3.jpg">
+                        <p>Milton Chapman</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="eigth-section">
+        <div>
+            <h2>START EATING HEALTHY TODAY</h2>
+        </div>
+
+        <div id="eigth-section-body">
+            <div class="class-boxes">
+                <p class="class_level">PREMIUM</p>
+                <p>$ 399 <a href="">/ month</a></p>
+                <p>That’s only 13.30$ per meal</p>
+            </div>
+            <div class="class-boxes">
+                <p class="class_level">PRO</p>
+                <p>$ 149 <a href="">/ month</a></p>
+                <p>That’s only 14.90$ per meal</p>
+            </div>
+            <div class="class-boxes">
+                <p class="class_level">STARTER</p>
+                <p>19$<a href=""> / meal</a></p>
+            </div>
         </div>
     </div>
 </body>
