@@ -183,13 +183,17 @@
         }
 
         #fifth-section {
-
+            justify-content: center;
+            align-items: center;
+            padding: 50px 0;
+            background-color: #f4f4f4;
         }
 
         #fifth-section h1 {
             color: black;
             text-align: center;
             margin-top: 50px;
+            font-size: 50px;
         }
 
         #fifth-section h1::after {
@@ -200,6 +204,54 @@
             width: 100px;
             margin: 0 auto;
             margin-top: 30px;
+            margin-bottom: 45px;
+        }
+
+        #fifth-section-body {
+            display: grid;
+            grid-template-columns: 1fr 1fr; 
+            grid-template-rows: repeat(3, auto);
+            grid-auto-rows: minmax(100px, auto); 
+            gap: 10px; 
+        }
+
+        #phone-container {
+            justify-self: right;
+            width: 40%;
+            max-width: 300px;
+            grid-column: 1; 
+            grid-row: 1 / span 3;
+            align-self: center; 
+        }
+
+        #phone-container img {
+            padding-right: 50px;
+            width: 100%;
+            height: auto;     
+        }
+
+        .steps {
+            color: black;
+            display: flex;
+            align-items: center;
+            grid-column: 2;
+        }
+
+        .step-number {
+            color: #e67e22;
+            border: 2px solid #e67e22;
+            display: inline-block;
+            border-radius: 50%;
+            height: 55px;
+            width: 55px;
+            text-align: center;
+            padding: 5px;
+            font-size: 30px;
+            margin-right: 25px;
+        }
+
+        .step-text {
+            font-size: 22px;
         }
 
     </style>
@@ -285,7 +337,40 @@
     </div>
 
     <div id="fifth-section">
-        <h1>HOW IT WORKS - SIMPLE AS 1, 2, 3</h1>
+        <div id="fifth-section-header">
+            <h1>HOW IT WORKS - SIMPLE AS 1, 2, 3</h1>
+        </div>
+
+        <div id="fifth-section-body">
+            <div id="phone-container">
+                <img src="Omnifood Contents/Omnifood Contents/app-iPhone.png">
+            </div>
+    
+            <div class="steps">
+                <div class="step-number">1</div>
+                <div class="step-text">Choose the subscription plan that best fits your needs and sign up today.</div>
+            </div>
+    
+            <div class="steps">
+                <div class="step-number">2</div>
+                <div class="step-text">Order your delicious meal using our mobile app or website. Or you can even call us!</div>
+            </div>
+    
+            <div class="steps">
+                <div class="step-number">3</div>
+                <div class="step-text">Enjoy your meal after less than 20 minutes. See you next time!</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sixth-section">
+        <div id="sixth-header">
+            <h1>WE'RE CURRENTLY IN THESE CITIES</h1>
+        </div>
+        
+        <div id="sixth-body-container">
+            
+        </div>
     </div>
 </body>
 </html>
