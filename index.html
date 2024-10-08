@@ -7,6 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <style>
         * {
             margin: 0;
@@ -14,6 +18,9 @@
             box-sizing: border-box;  
             font-family: 'Lato', 'Arial', 'sans-serif';
             font-weight: 300;
+        }
+
+        body {
             color: white;
         }
 
@@ -30,7 +37,6 @@
             width: 100%;
             padding: 20px 50px;  
             overflow: hidden;  
-
         }
 
         #first-section-container {
@@ -94,7 +100,6 @@
 
         #second-button {
             color: #e67e22;
-
         }
 
         #second-section-container {
@@ -120,23 +125,81 @@
             margin-top: 30px;
         }
 
-        #second-p-container {
-            margin-left: 380px;
-        }
-
-        .second-section-p {
-            font-size: 18px;
-            color: black;
-        }
-
         #second-section-p {
-            color: black;
             padding-top: 20px;
+            text-align: center;
+            font-size: 20px;
+            color: black;
+            width: 80%;
+            margin-left: 10%;
+        }
+
+        #third-section-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 60px;
+        }
+
+        .third-section-boxes {
+            color: black;
+            height: auto;
+            width: 17%;
+            overflow: hidden;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            margin: 7px;
+        }
+
+        .ion-icon {
+            color: #e67622;
+            font-size: 60px;
+        }
+
+        .third-section-boxes h3 {
+            padding-top: 15px;
+        }
+
+        .third-section-boxes p {
+            padding-top: 15px;
             font-size: 18px;
         }
 
-        #second-section-p-2 {
-            padding-top: 15px;
+        #fourth-section-container {
+            display: flex;
+        }
+
+        #fourth-section-images {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            list-style: none;
+            width: fit-content;
+            width: 100%;
+        }
+
+        .images img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        #fifth-section {
+
+        }
+
+        #fifth-section h1 {
+            color: black;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #fifth-section h1::after {
+            display: block;
+            height: 2px;
+            background-color: #e67622;
+            content: " ";
+            width: 100px;
+            margin: 0 auto;
+            margin-top: 30px;
         }
 
     </style>
@@ -146,12 +209,12 @@
         <div id="first-section-container">
             <nav>
                 <img id="nav-image" src="Omnifood Contents/Omnifood Contents/logo-white.png" alt="logo">
-            <div id="nav-wrapper">
-                <p class="nav-items">FOOD DELIVERY</p>
-                <p class="nav-items">HOW IT WORKS</p>
-                <p class="nav-items">OUR CITIES</p>
-                <p class="nav-items">SIGN UP</p>
-            </div>
+                <div id="nav-wrapper">
+                    <p class="nav-items">FOOD DELIVERY</p>
+                    <p class="nav-items">HOW IT WORKS</p>
+                    <p class="nav-items">OUR CITIES</p>
+                    <p class="nav-items">SIGN UP</p>
+                </div>
             </nav>
 
             <div id="middle-container">
@@ -160,16 +223,69 @@
                 <a id="first-button" href="">I'm hungry</a>
                 <a id="second-button" href="">Show me more</a>
             </div>
-            
         </div>
     </div> 
 
     <div id="second-section-container">
         <h2 id="second-section-header">GET FOOD FAST - NOT FAST FOOD</h2>
         <div id="second-p-container">
-            <p class="second-section-p" id="second-section-p">Hello, we’re Omnifood, your new premium food delivery service. We know you’re always busy.</p>
-            <p class="second-section-p" id="second-section-p-2">No time for cooking. So let us take care of that, we’re really good at it, we promise!</p>
+            <p id="second-section-p">Hello, we’re Omnifood, your new premium food delivery service. We know you’re always busy. No time for cooking. So let us take care of that, we’re really good at it, we promise!</p>        </div>
+    </div>
+
+    <div id="third-section-container">
+        <div class="third-section-boxes">
+            <ion-icon class="ion-icon" name="infinite-outline"></ion-icon>
+            <h3>UP TO 365 DAYS/YEAR</h3>
+            <p>Never cook again! We really mean that. Our subscription plans include up to 365 days/year coverage. You can also choose to order more flexibly if that's your style.</p>
         </div>
+        <div class="third-section-boxes">
+            <ion-icon class="ion-icon" name="time-outline"></ion-icon>
+            <h3>READY IN 20 MINUTES</h3>
+            <p>You're only twenty minutes away from your delicious and super healthy meals delivered right to your home. We work with the best chefs in each town to ensure that you're 100% happy.</p>
+        </div>
+        <div class="third-section-boxes">
+            <i class="fas fa-carrot ion-icon"></i>
+            <h3>100% ORGANIC</h3>
+            <p>All our vegetables are fresh, organic and local. Animals are raised without added hormones or antibiotics. Good for your health, the environment, and it also tastes better!</p>
+        </div>
+        <div class="third-section-boxes">
+            <ion-icon class="ion-icon" name="cart-outline"></ion-icon>
+            <h3>ORDER ANYTHING</h3>
+            <p>We don't limit your creativity, which means you can order whatever you feel like. You can also choose from our menu containing over 100 delicious meals. It's up to you!</p>
+        </div>
+    </div>
+
+    <div id="fourth-section-container">
+        <ul id="fourth-section-images">
+            <li class="images">
+                <img src="Omnifood Contents/Omnifood Contents/1.jpg">
+            </li>
+            <li class="images">
+                <img src="Omnifood Contents/Omnifood Contents/2.jpg">
+            </li>
+            <li class="images">
+                <img src="Omnifood Contents/Omnifood Contents/3.jpg">
+            </li>
+            <li class="images">
+                <img src="Omnifood Contents/Omnifood Contents/4.jpg">
+            </li>
+            <li class="images">
+                <img src="Omnifood Contents/Omnifood Contents/5.jpg">
+            </li>
+            <li class="images">
+                <img src="Omnifood Contents/Omnifood Contents/6.jpg">
+            </li>
+            <li class="images">
+                <img src="Omnifood Contents/Omnifood Contents/7.jpg">
+            </li>
+            <li class="images">
+                <img src="Omnifood Contents/Omnifood Contents/8.jpg">
+            </li>
+        </ul>
+    </div>
+
+    <div id="fifth-section">
+        <h1>HOW IT WORKS - SIMPLE AS 1, 2, 3</h1>
     </div>
 </body>
 </html>
