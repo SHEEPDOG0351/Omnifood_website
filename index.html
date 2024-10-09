@@ -204,10 +204,25 @@
             width: 100%;
         }
 
+        .images {
+            width: 100%;
+            height: auto; 
+            overflow: hidden; 
+            position: relative;
+        }
+
         .images img {
+            filter: brightness(50%);
             width: 100%;
             height: auto;
             display: block;
+            transition: transform 0.3s ease;
+            transform: scale(1.2); /* Start slightly zoomed in */
+        }
+
+        .images img:hover {
+            filter: brightness(100%);
+            transform: scale(1);
         }
 
         #fifth-section {
@@ -568,6 +583,165 @@
             background-color: #bc5a10;
         }
 
+        #ninth-section-header {
+            background-color: white;
+            margin: 1px;
+        }
+
+        #ninth-section-header h2 {
+            background-color: white;
+            text-align: center;
+            color: #555;
+            font-size: 38px;
+            padding-top: 35px;
+        }
+
+        #ninth-section-header h2:after {
+            display: block;
+            height: 2px;
+            background-color: #e67622;
+            content: " ";
+            width: 100px;
+            margin: 0 auto;
+            margin-top: 30px;
+            margin-bottom: 18px;
+        }
+
+        form {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px 10px;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            color: #555;
+            margin-bottom: 50px;
+        }
+
+        label {
+            align-self: center;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        input[type="checkbox"] {
+            width: auto;
+            margin-right: 5px;
+            align-self: start;
+        }
+
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+        }
+
+        input[type="submit"] {
+            grid-column: span 2;
+            background-color: #e67e22;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            text-align: center;
+            width: 100px; /* Set a fixed width */
+            margin-left: 34%; 
+            display: block; /* Ensure it's treated as a block element for centering */
+
+        }
+
+        input[type="submit"]:hover {
+            background-color: #d35400;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        #message:focus {
+            outline: none;
+        }
+
+        footer {
+            background-color: #333;
+            padding: 20px 50px;
+        }
+
+        #footer-container {
+            padding-top: 35px;
+            display: flex;
+            justify-content: space-between; 
+            align-items: center; 
+            max-width: 1200px;
+            margin: 0 auto; 
+            color: #888;
+        }
+
+        #footer-text-container ul {
+            display: flex;
+            gap: 30px; 
+        }
+
+        #footer-text-container ul li a{
+            list-style: none;
+            font-size: 14.4px;
+            text-decoration: none;
+            color: #888;
+        }
+
+        #footer-text-container ul li a:hover {
+            color: white;
+            transition: 0.2s;
+        }
+
+        #footer-icon-container {
+            display: flex;
+            gap: 20px; 
+        }
+
+        #footer-icon-container ion-icon, i{
+            font-size: 24px;
+            color: #888;
+            cursor: pointer;
+        }
+
+        #facebook:hover {
+            color: #3b5998;
+        }
+
+        #twitter:hover {
+            color: #1DA1F2;
+        }
+
+        #google:hover {
+            color: #DB4437;
+        }
+
+        #instagram:hover {
+            color: #E4405F;
+        }
+
+        #footer-bottom {
+            color: #888;
+            text-align: center;
+            padding-top: 50px;
+            padding-bottom: 30px;
+        }
+
+
     </style>
 </head>
 <body>
@@ -808,5 +982,61 @@
             </div>
         </div>
     </div>
+
+    <div>
+        <div id="ninth-section-header">
+            <h2>We're Happy to Hear from You</h2>
+        </div>
+        <form action="/submit_form" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+    
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required>
+    
+            <label for="referral">How did you find us?</label>
+            <select id="referral" name="referral">
+                <option value="friends">Friends</option>
+                <option value="ads">Ads</option>
+                <option value="search">Search Engine</option>
+            </select>
+    
+            <label>Newsletter?</label>
+            <div class="checkbox-label">
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter" style="margin: 0;">Yes, please</label>
+            </div>
+    
+            <label for="message">Drop us a line</label>
+            <textarea id="message" name="message" placeholder="Your message"></textarea>
+    
+            <input type="submit" value="Send it!">
+        </form>        
+    </div>
+
+    <footer>
+        <div id="footer-container">
+            <div id="footer-text-container">
+                <ul>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Press</a></li>
+                    <li><a href="">iOS App</a></li>
+                    <li><a href="">Andriod App</a></li>
+                </ul>
+            </div>
+
+            <div id="footer-icon-container">
+                <ion-icon id="facebook" name="logo-facebook"></ion-icon>
+                <ion-icon id="twitter" name="logo-twitter"></ion-icon>
+                <i id="google" class="fab fa-google-plus-g"></i>
+                <ion-icon id="instagram" name="logo-instagram"></ion-icon>
+            </div>
+        </div>
+
+        <div id="footer-bottom">
+            <p>Copyright © 2015 by Omnifood. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
