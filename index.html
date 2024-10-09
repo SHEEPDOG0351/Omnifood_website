@@ -69,11 +69,20 @@
         }
 
         .nav-items {
-            padding-right: 20px;
-            margin-left: 30px;
             font-size: 18px;
             text-decoration: none;
+            display: inline-block;
+            border-bottom: 2px solid transparent;
+            padding-bottom: 5px; 
+            margin: 20px;
         }
+
+        .nav-items:hover {
+            text-decoration: none;
+            border-bottom: 2px solid #e67e22; 
+            transition: border-bottom 0.3s ease;
+        }
+
 
         #middle-container {
             padding-top: 200px;
@@ -95,15 +104,30 @@
             text-align: center;
             padding: 10px 30px;
             margin-top: 10px;
+            font-size: 18px;
         }
 
         #first-button {
             border-color: #e67e22;
             background-color: #e67e22;
+            color: white;
+        }
+
+        #first-button:hover {
+            background-color: #bc5a10;
+            border-color: #bc5a10;
+            transition: 0.3s ease-out;
         }
 
         #second-button {
             color: #e67e22;
+        }
+
+        #second-button:hover {
+            background-color: #e67e22;
+            border-color: #e67e22;
+            color: white;
+            transition: 0.3s ease-out;
         }
 
         #second-section-container {
@@ -334,6 +358,13 @@
             border-bottom: 1px solid #e67e22;
         }
 
+        .cities a:hover {
+            color: black;
+            text-decoration: none;
+            padding-bottom: 1px;
+            border-bottom: none !important;
+        }
+
         .sixth-ionicons {
             color: #e67622;
             font-size: 20px;
@@ -445,7 +476,7 @@
         }
 
         .class-boxes {
-            margin: 20px;
+            margin: 0px 20px;
             width: 20%;
             color: #555;
             font-weight: 300;
@@ -486,17 +517,59 @@
             font-weight: 300;
             background-color: white;
             color: #555;
+            height: 165px;
         }
 
         .checkmark {
             color: #e67622;
-            font-size: 12px;
+            font-size: 16px;
             padding-right: 15px;
+            padding-left: 10px;
         }
 
         .checkmark-text {
-            font-size: 15px;
+            font-size: 20px;
             padding-top: 15px;
+        }
+
+        #last-text {
+           
+        }
+
+        .end-boxes {
+            display: flex;
+            justify-content: center;
+            width: 20%;
+            color: #555;
+            background-color: white;
+            font-weight: 300;
+            margin: 1px 20px;
+        }
+
+        .end-boxes button {
+            border: 1px #e67622 solid;
+            border-radius: 50px;
+            color: #e67622;
+            text-align: center;
+            margin: 15px 0px 10px 0px;
+            padding: 10px 30px;
+            font-size: 20px;
+            background-color: white;
+        }
+
+        .end-boxes button:hover {
+            background-color: #e67622;
+            color: white;
+            transition: 0.3s;
+        }
+
+        #filled {
+            background-color: #e67622;
+            color: white;
+        }
+
+        #filled:hover {
+            background-color: #bc5a10;
         }
 
     </style>
@@ -711,19 +784,31 @@
                 <p class="checkmark-text"><ion-icon class="checkmark" name="checkmark"></ion-icon> 1 meal every day</p>
                 <p class="checkmark-text"><ion-icon class="checkmark" name="checkmark"></ion-icon> Order 24/7</p>
                 <p class="checkmark-text"><ion-icon class="checkmark" name="checkmark"></ion-icon> Access to newest creations</p>
-                <p class="checkmark-text"><ion-icon class="checkmark" name="checkmark"></ion-icon> Free delivery</p>
+                <p class="checkmark-text"><ion-icon id="last-text" class="checkmark" name="checkmark"></ion-icon> Free delivery</p>
             </div>
             <div class="middle-boxes">
                 <p class="checkmark-text"><ion-icon class="checkmark" name="checkmark"></ion-icon> 1 meal 10 days/month</p>
                 <p class="checkmark-text"><ion-icon class="checkmark" name="checkmark"></ion-icon> Order 24/7</p>
                 <p class="checkmark-text"><ion-icon class="checkmark" name="checkmark"></ion-icon> Access to newest creations</p>
-                <p class="checkmark-text"><ion-icon class="checkmark" name="checkmark"></ion-icon> Free delivery</p>
+                <p class="checkmark-text"><ion-icon id="last-text" class="checkmark" name="checkmark"></ion-icon> Free delivery</p>
             </div>
             <div class="middle-boxes">
                 <p class="checkmark-text"><ion-icon class="checkmark" name="checkmark"></ion-icon> 1 meal</p>
                 <p class="checkmark-text"><ion-icon class="checkmark" name="checkmark"></ion-icon> Order from 8 am to 12 pm</p>
                 <p class="checkmark-text"><ion-icon class="checkmark" name="close"></ion-icon></p>
-                <p class="checkmark-text"><ion-icon class="checkmark" name="checkmark"></ion-icon> Free delivery</p>
+                <p class="checkmark-text"><ion-icon id="last-text" class="checkmark" name="checkmark"></ion-icon> Free delivery</p>
+            </div>
+        </div>
+
+        <div class="eigth-section-body">
+            <div class="end-boxes">
+                <button href="" id="filled">Sign up now</button>
+            </div>
+            <div class="end-boxes">
+                <button href="">Sign up now</button>
+            </div>
+            <div class="end-boxes">
+                <button href="">Sign up now</button>
             </div>
         </div>
     </div>
